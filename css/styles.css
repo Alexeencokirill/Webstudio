@@ -735,7 +735,7 @@ button {
 /* ================= /Our team ===================== */
 
 /* =================== Footer ===================== */
-
+/* ===== Mobile ===== */
 @media screen and (max-width: 767px) {
     .container.flex-footer{
         display: flex;
@@ -745,15 +745,11 @@ button {
     .bg-dark {
         padding: 96px 0;
     }
-    .footer-description {
+    .container .footer-description {
         width: 268px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
         margin: 0 auto;
         text-align: start;
         margin-top: 16px;
-    
-        color: var(--accent-color);
     }
     .footer-media {
         margin: 72px 0;
@@ -768,7 +764,36 @@ button {
     .footer .logo {
         margin-right: 0;
     }
-   
+}
+
+/* ===== Tablet ===== */
+
+@media screen and (min-width: 768px) {
+    .bg-dark {
+        padding: 96px 0;
+    }
+    .container.flex-footer {
+        display: flex;
+        flex-flow: wrap;
+        row-gap: 72px;
+        margin: 0 auto;
+    }
+    .footer-media {
+        margin-left: 24px;
+    }
+    .container .footer-description {
+        width: 264px;
+    }
+}
+
+.footer-description {
+    width: 242px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    margin-top: 16px;
+
+    color: var(--accent-color);
 }
 
  .media {
@@ -804,16 +829,6 @@ button {
 
 /* .footer {
     padding: 100px 0;
-}
-
-.footer-description {
-    width: 242px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-
-    margin-top: 16px;
-
-    color: var(--accent-color);
 }
 
 .footer .logo {
@@ -1197,6 +1212,12 @@ button {
         margin: 0 auto;
         margin-bottom: 16px;
     }
+}
+/* ===== Tablet ===== */
+@media screen and (min-width: 768px) {
+    .footer-email .footer-email-input {
+            margin-right: 24px;
+        }
 }
 
 .footer-form-label-text {
