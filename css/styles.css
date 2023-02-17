@@ -777,12 +777,27 @@ button {
         flex-flow: wrap;
         row-gap: 72px;
         margin: 0 auto;
+        padding-left: 108px;
     }
     .footer-media {
         margin-left: 24px;
     }
     .container .footer-description {
         width: 264px;
+    }
+}
+
+/* ===== Desktop ===== */
+
+@media screen and (min-width: 1200px) {
+    .footer-media {
+        margin-left: 120px;
+    }
+    .footer {
+        padding: 100px 0;
+    }
+    .container.flex-footer {
+        padding: 0 15px;
     }
 }
 
@@ -803,6 +818,7 @@ button {
      letter-spacing: 0.02em;
      color: var(--white-color);
  }
+ 
 
  .footer-social-list {
      display: flex;
@@ -826,34 +842,6 @@ button {
  .footer-link:focus {
      background-color: var(--green-color);
  }
-
-/* .footer {
-    padding: 100px 0;
-}
-
-.footer .logo {
-    margin-right: 0;
-}
-
-.flex-footer {
-    display: flex;
-}
-
-.footer-media {
-    margin-left: 120px;
-}
-
-.footer-social-list {
-    display: flex;
-   margin-top: 8px;
-   gap: 16px;
-}
-
-.footer-icon {
-    width: 24px;
-    height: 24px;
-}
- */
 
 /* =================== /Footer ===================== */
 
@@ -1219,6 +1207,12 @@ button {
             margin-right: 24px;
         }
 }
+/* ===== Desktop ===== */
+@media screen and (min-width: 1200px) {
+    .footer-form {
+        margin-left: 80px;
+    }
+}
 
 .footer-form-label-text {
     display: block;
@@ -1275,11 +1269,5 @@ button {
     position: absolute;
     right: 24px;
 }
-
-/* .footer-form {
-    margin-left: 80px;
-}
-
-*/
 
 /* ================= /Footer Form ================== * /
