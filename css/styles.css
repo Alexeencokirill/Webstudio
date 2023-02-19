@@ -477,6 +477,7 @@ button {
     }
     .hero.section.bg-dark {
         height: 432px;
+        padding-top: 112px;
     }
 }
 /* ===== Tablet ===== */
