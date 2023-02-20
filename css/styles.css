@@ -877,7 +877,7 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        column-gap: 18px;
+        column-gap: 24px;
         row-gap: 72px;
     }
 }
