@@ -277,6 +277,7 @@ button {
     .menu-item .current {
         display: flex;
         flex-direction: column;
+        color: var(--pressed-color);
     }
     
     .menu-item .current::after {
@@ -394,13 +395,16 @@ button {
     
         .mobile-menu__container {
             position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            height: 100%;
             padding: 80px 40px 40px 40px;
         }
     
         .mobile-menu__close-btn {
             position: absolute;
-            top: 40px;
-            right: 15px;
+            top: 23px;
+            right: 19px;
             line-height: 0;
             justify-content: center;
             align-items: center;
@@ -457,10 +461,10 @@ button {
     
         .mobile-icons {
             display: flex;
-            align-items: center;
-            justify-content: flex-start;
             gap: 56px;
             margin-top: 48px;
+            margin-left: auto;
+            margin-right: auto;
         }
     
         .mobile-list-link {
@@ -487,14 +491,14 @@ button {
 
 @media screen and (max-width: 427px) {
     .mobile-icons {
-        gap: 25px;
+        gap: 24px;
     }
 }
 
 @media screen and (max-width: 427px) {
-    .mobile-menu-contact {
+    /* .mobile-menu-contact {
         margin-top: 100px;
-    }
+    } */
     .mobile-menu-contact-link.link {
         font-size: 20px;
     }
@@ -1154,9 +1158,17 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
 /* ================== Modal Form =================== */
 
 /* ===== Mobile ===== */
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 427px) {
     .modal {
         width: 315px;
+    }
+    .container-policy .check-policy {
+        font-size: 9px;
+    }
+}
+@media screen and (min-width: 428px) and (max-width: 767px) {
+    .modal {
+        width: 392px;
     }
 }
 
